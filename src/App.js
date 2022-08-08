@@ -73,5 +73,3 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
-
-// Intro to CSS-in-js
