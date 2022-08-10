@@ -25,10 +25,10 @@ export const TextContainer = styled.span`
 
 export const QuantityContainer = styled(TextContainer)`
   display: flex;
-  .arrow {
+  div {
     cursor: pointer;
   }
-  .value {
+  span {
     margin: 0 10px;
   }
 `;
