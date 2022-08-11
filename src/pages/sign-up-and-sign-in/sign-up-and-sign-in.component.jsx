@@ -13,5 +13,3 @@ const SignInAndSignUpPage = () => (
 );
 
 export default SignInAndSignUpPage;
-
-// Redux Introduction
