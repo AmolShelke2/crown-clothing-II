@@ -74,5 +74,3 @@ class SignIn extends React.Component {
 }
 
 export default SignIn;
-
-// Sign in with Email and Password
