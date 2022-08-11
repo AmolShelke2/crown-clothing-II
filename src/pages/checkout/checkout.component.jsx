@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import './checkout.styles.scss';
+// import './checkout.styles.scss';
 
 import { createStructuredSelector } from 'reselect';
 import {
@@ -12,46 +12,54 @@ import {
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
 
+import {
+  CheckoutPageContainer,
+  CheckOutHeader,
+  HeaderBlockContainer,
+  TotalAmountContainer,
+  TestWarningContainer,
+} from './checkout-styles';
+
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page">
-    <div className="checkout-header">
-      <div className="header-block">
+  <CheckoutPageContainer>
+    <CheckOutHeader>
+      <HeaderBlockContainer>
         <span>Product</span>
-      </div>
+      </HeaderBlockContainer>
 
-      <div className="header-block">
+      <HeaderBlockContainer>
         <span>Description</span>
-      </div>
+      </HeaderBlockContainer>
 
-      <div className="header-block">
+      <HeaderBlockContainer>
         <span>Quantity</span>
-      </div>
+      </HeaderBlockContainer>
 
-      <div className="header-block">
+      <HeaderBlockContainer>
         <span>Price</span>
-      </div>
+      </HeaderBlockContainer>
 
-      <div className="header-block">
+      <HeaderBlockContainer>
         <span>Remove</span>
-      </div>
-    </div>
+      </HeaderBlockContainer>
+    </CheckOutHeader>
 
     {cartItems.map((cartItem) => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
 
-    <div className="total">
+    <TotalAmountContainer>
       <span>TOTAL: ${total}</span>
-    </div>
+    </TotalAmountContainer>
 
-    <div className="test-warning">
+    <TestWarningContainer>
       *Please Use the following card number and expiry to create a payment*
       <br />
       4242 4242 4242 4242 - Exp: 01/23 - CVV: 123
-    </div>
+    </TestWarningContainer>
 
     <StripeCheckoutButton price={total} />
-  </div>
+  </CheckoutPageContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
