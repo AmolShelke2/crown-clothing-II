@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const mainColor = `black`;
-const subColor = 'white';
+const subColor = 'grey';
 
 const shrinkLabelStyles = css`
   top: -14px;
