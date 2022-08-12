@@ -47,6 +47,9 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 };
 
-export default firebase;
+export const addCollectionAndDocuments = (collectionKey, objectToAdd) => {
+  const collectionRef = firestore.collection(collectionKey);
+  console.log(collectionRef);
+};
 
-// Moving Our Shop Data To Firebase
+export default firebase;
