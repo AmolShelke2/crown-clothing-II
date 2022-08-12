@@ -48,3 +48,5 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 };
 
 export default firebase;
+
+// Moving Our Shop Data To Firebase
