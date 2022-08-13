@@ -53,3 +53,5 @@ export const addCollectionAndDocuments = (collectionKey, objectToAdd) => {
 };
 
 export default firebase;
+
+// Moving our shop Data to Firebase.
