@@ -82,4 +82,4 @@ export const convertCollectionsSnapShotToMap = (collections) => {
 
 export default firebase;
 
-//
+// WithSpinner HOC
