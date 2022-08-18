@@ -16,5 +16,3 @@ const WithSpinner = (WrappedComponent) => {
 };
 
 export default WithSpinner;
-
-// Learnt Promise Pattern
