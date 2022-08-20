@@ -46,7 +46,6 @@ class ShopPage extends React.Component {
   render() {
     const { match } = this.props;
     const { loading } = this.state;
-    console.log(loading);
 
     return (
       <div className="shop-page">
