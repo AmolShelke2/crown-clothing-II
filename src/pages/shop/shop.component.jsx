@@ -63,3 +63,5 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShopPage);
+
+// Using the Concept of Container Pattern
